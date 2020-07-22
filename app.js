@@ -1,15 +1,15 @@
-//var express = require('express');
+var express = require('express');
 
-//var app = express();
+var app = express();
 
-//const mapa = [ {a: "a", b: "b", c: "c"}]
+const mapa = [ {a: "a", b: "b", c: "c"}]
 
-//app.get('/', (req, res) => { res.json(mapa)});
+app.get('/', (req, res) => { res.send("Hello Openshift world.")});
 
-//app.listen(8080, function(){
-    //console.log('Listening on port 8080');
-//});
+app.listen(8080, function(){
+    console.log('Listening on port 8080');
+});
 
-//module.exports = app;
+module.exports = app;
 
 console.log("Hello world!")
